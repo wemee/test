@@ -1,0 +1,11 @@
+digraph G{
+	start -> take_1[label = "okok ooookkkk"];
+	take_1 [label = "take 1"];
+	take_1 -> { "excute 1", excute_2, excute_3 };
+	excute_2 [label = "excute 2"];
+	excute_3 [label = "excute 3"];
+	edge [label = "10 times", color = red];
+	"excute 1" -> end;
+	edge [label = "", color = black];
+	{ excute_2, excute_3 } -> end;
+}
